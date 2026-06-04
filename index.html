@@ -12,27 +12,27 @@
 
 // Presentación
 alert("Hola, mi nombre es Carlos Emmanuel Benitez Reyes.");
-alert("Este programa calcula el área y perímetro de tres figuras geométricas.");
+alert("Este programa calcula el área y perímetro del círclo, rectánglo y trapecio.");
 
 // CÍRCULO
-let radio = parseFloat(prompt("5 cm:"));
+let radio = parseFloat(prompt("Ingresa el radio del círculo:"));
 
 let areaCirculo = Math.PI * radio * radio;
 let perimetroCirculo = 2 * Math.PI * radio;
 
 // RECTÁNGULO
-let baseRect = parseFloat(prompt("8 cm:"));
-let alturaRect = parseFloat(prompt("4 cm:"));
+let baseRect = parseFloat(prompt("Ingresa la base del rectángulo:"));
+let alturaRect = parseFloat(prompt("Ingresa la altura del rectángulo:"));
 
 let areaRectangulo = baseRect * alturaRect;
 let perimetroRectangulo = 2 * (baseRect + alturaRect);
 
 // TRAPECIO
-let baseMayor = parseFloat(prompt("10 cm:"));
-let baseMenor = parseFloat(prompt("6 cm:"));
-let alturaTrap = parseFloat(prompt("5 cm:"));
-let lado1 = parseFloat(prompt("5 cm:"));
-let lado2 = parseFloat(prompt("5 cm:"));
+let baseMayor = parseFloat(prompt("Ingresa la base mayor del trapecio:"));
+let baseMenor = parseFloat(prompt("Ingresa la base menor del trapecio:"));
+let alturaTrap = parseFloat(prompt("Ingresa la altura del trapecio:"));
+let lado1 = parseFloat(prompt("Ingresa el lado izquierdo del trapecio:"));
+let lado2 = parseFloat(prompt("Ingresa el lado derecho del trapecio:"));
 
 let areaTrapecio = ((baseMayor + baseMenor) * alturaTrap) / 2;
 let perimetroTrapecio = baseMayor + baseMenor + lado1 + lado2;
