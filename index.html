@@ -6,11 +6,53 @@
 </head>
 <body>
 
-    <h1>Calculadora de Figuras Geométricas</h1>
+<h1>Calculadora de Figuras Geométricas</h1>
 
-    <alert("Hola, mi nombre es Carlos Emmanuel Benitez Reyes.")>
+<script>
 
-    </alert("Este programa calcula el área y perímetro de figuras geométricas.")>
+// Presentación
+alert("Hola, mi nombre es Carlos Emmanuel Benitez Reyes.");
+alert("Este programa calcula el área y perímetro de tres figuras geométricas.");
+
+// CÍRCULO
+let radio = parseFloat(prompt("5 cm:"));
+
+let areaCirculo = Math.PI * radio * radio;
+let perimetroCirculo = 2 * Math.PI * radio;
+
+// RECTÁNGULO
+let baseRect = parseFloat(prompt("8 cm:"));
+let alturaRect = parseFloat(prompt("4 cm:"));
+
+let areaRectangulo = baseRect * alturaRect;
+let perimetroRectangulo = 2 * (baseRect + alturaRect);
+
+// TRAPECIO
+let baseMayor = parseFloat(prompt("10 cm:"));
+let baseMenor = parseFloat(prompt("6 cm:"));
+let alturaTrap = parseFloat(prompt("5 cm:"));
+let lado1 = parseFloat(prompt("5 cm:"));
+let lado2 = parseFloat(prompt("5 cm:"));
+
+let areaTrapecio = ((baseMayor + baseMenor) * alturaTrap) / 2;
+let perimetroTrapecio = baseMayor + baseMenor + lado1 + lado2;
+
+// Mostrar resultados
+document.write("<h2>Resultados</h2>");
+
+document.write("<h3>Círculo</h3>");
+document.write("Área: " + areaCirculo.toFixed(2) + "<br>");
+document.write("Perímetro: " + perimetroCirculo.toFixed(2) + "<br><br>");
+
+document.write("<h3>Rectángulo</h3>");
+document.write("Área: " + areaRectangulo.toFixed(2) + "<br>");
+document.write("Perímetro: " + perimetroRectangulo.toFixed(2) + "<br><br>");
+
+document.write("<h3>Trapecio</h3>");
+document.write("Área: " + areaTrapecio.toFixed(2) + "<br>");
+document.write("Perímetro: " + perimetroTrapecio.toFixed(2));
+
+</script>
 
 </body>
 </html>
